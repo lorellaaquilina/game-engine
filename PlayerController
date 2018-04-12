@@ -1,28 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour {
+public class FrogControls : MonoBehaviour {
+		
+	public Rigidbody2D rb;
 
-	public float speed;
+	void Update () {
 
-
-	private Rigidbody rb;
-	private int count;
-
-	void Start ()
-	{
-		rb = GetComponent<Rigidbody>();
+		if (Input.GetKeyDown(KeyCode.RightArrow))
+			rb.MovePosition(rb.position + Vector2.right);
+		else if (Input.GetKeyDown(KeyCode.LeftArrow))
+			rb.MovePosition(rb.position + Vector2.left);
+		else if (Input.GetKeyDown(KeyCode.UpArrow))
+			rb.MovePosition(rb.position + Vector2.up);
+		else if (Input.GetKeyDown(KeyCode.DownArrow))
+			rb.MovePosition(rb.position + Vector2.down);
 	}
 
-	void FixedUpdate()
+	void OnTriggerEnter2D(Collider2D col)
 	{
-		float moveHorizontal = Input.GetAxis ("Horizontal");
-		float moveVertical = Input.GetAxis ("Vertical");
-
-		Vector3 movement = new Vector3 (moveHorizontal, moveVertical, 0.0f);
-
-		rb.AddForce (movement * speed, ForceMode.Impulse);
+		if (col.tag == "Car") 
+		{
+			Score.CurrentScore = 0;
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		}
 	}
 }
