@@ -13,7 +13,7 @@ public class CarMovement : MonoBehaviour {
 
 	void Start ()
 	{
-		speed = Random.Range (8, 12);
+		speed = Random.Range (9, 11);
 	}
 
 	void FixedUpdate () 
