@@ -160,8 +160,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1211269347
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e38f79f44de890545b03d6d93a1362f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -180,7 +180,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 262312080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.04, y: 0, z: 0}
+  m_LocalPosition: {x: -5.35, y: -3.45, z: 0}
   m_LocalScale: {x: 0.07148141, y: 0.07148141, z: 0.07148141}
   m_Children: []
   m_Father: {fileID: 0}
@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 2040571137}
   - component: {fileID: 2040571140}
   - component: {fileID: 2040571139}
+  - component: {fileID: 2040571141}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Untagged
@@ -389,8 +390,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1211269347
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a9132f0fe19743845a5118fee9251094, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -409,7 +410,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2040571136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.004, y: -3.56, z: 0}
+  m_LocalPosition: {x: -0.004, y: -3.97, z: 0}
   m_LocalScale: {x: 1.3867891, y: 1.3867893, z: 1.3867893}
   m_Children: []
   m_Father: {fileID: 0}
@@ -450,3 +451,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2040571141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2040571136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309af1b30b76d6c4d87ad57dc6a3fd99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2040571140}
