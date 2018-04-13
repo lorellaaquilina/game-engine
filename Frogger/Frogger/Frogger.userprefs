@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CarSpawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FrogControls.cs">
     <Files>
-      <File FileName="Assets\Scripts\CarSpawner.cs" Line="27" Column="1" />
+      <File FileName="Assets\Scripts\CarSpawner.cs" Line="29" Column="61" />
       <File FileName="Assets\Scripts\CarMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FrogControls.cs" Line="22" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
